@@ -25,4 +25,11 @@ To debug in IntelliJ Idea, open the 'Maven Projects' tool window (View
 version = "2026.1"
 
 project {
+
+    subProject(Child)
 }
+
+
+object Child : Project({
+    name = "VS FUS QA Child"
+})
